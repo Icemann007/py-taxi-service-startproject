@@ -30,7 +30,7 @@ class Car(models.Model):
         ordering = ["model"]
 
     def __str__(self):
-        return f"Car: {self.manufacturer} {self.model}, Driver: {self.drivers}"
+        return f"Car: {self.manufacturer} {self.model}"
 
 
 class Driver(AbstractUser):
